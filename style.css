@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sens-serif;
+    background-color: #f1f3f6;
+}
+
+:root {
+    --primary-color: #2874f0;
+}
+
+.container {
+    padding: 0 8px;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    height: 56px;
+    justify-content: space-between;
+    display: flex;
+}
+
+header .nav-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+
+}
+
+header .nav-container .logo {
+    display: inline;
+    cursor: pointer;
+
+}
+
+header .nav-container .logo img {
+    width: 75px;
+}
+
+header.search {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .search .search-container {
+    width: 540px;
+    height: 36px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 /23%);
+    display: flex;
+    margin-left: 15px;
+}
+
+header .search .search-container input {
+    width: calc(100% - 32px);
+    padding: 16px;
+    outline: none;
+    border: none;
+}
+
+header .search .search-container button {
+    width: 36px;
+    height: 100%;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+
+header .login {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+header .login button {
+    width: 125px;
+    padding: 8px 40px;
+    font-size: 13px;
+    font-weight: 800;
+    background-color: white;
+    color: var(--primary-color);
+    border: none;
+    box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+header .more {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    color: white;
+    font: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+header .more svg {
+    margin-left: 8px;
+    rotate: -90deg;
+
+}
+
+header .cart {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    color: white;
+    cursor: pointer;
+}
+
+header .cart svg {
+    margin-right: 6px;
+}
+
+.menu {
+    display: none;
+}
+
+#search_color {
+    color: #f1f3f6;
+    padding: 15px 25px;
+    display: none;
+}
+
+.section-1-container {
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.section-1-item {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1-item img {
+    width: 64px;
+    height: 64px;
+    padding-top: 9px;
+}
+
+.section-1 {
+
+    height: 122px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgb(0, 0, 0, 0.16);
+}
+
+/* Section 2 */
+.section-2 {
+    display: flex;
+    margin-top: 1.2rem;
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: white;
+    height: 340px;
+}
+
+.section-2 .left-container {
+    height: 100%;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 0.1);
+    width: 85%;
+    overflow: hidden;
+
+}
+
+.section-2 .left-container .upper {
+    height: 10%;
+    width: 100%;
+    align-items: center;
+    padding: 18px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.section-2 .left-container .upper button {
+    background-color: var(--primary-color);
+    margin-left: auto;
+    margin-right: 50px;
+    border-radius: 2px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 9px 18px;
+    cursor: pointer;
+}
+
+.section-2 .left-container .lower .item-container {
+    height: 81%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: auto;
+}
+
+.lower .section-2-items {
+    width: 200px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.lower .section-2-items img {
+    width: 135px;
+    height: 160px;
+    margin: auto;
+}
+
+.lower .section-2-items .product-name {
+    font-size: 0.8rem;
+    margin: 2px 0;
+}
+
+.lower .section-2-items .offer {
+    font-size: 16px;
+    color: #388e3c;
+    margin: 4px 0;
+}
+
+.lower .section-2-items .sub-text {
+    opacity: 0.6;
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.section-2 .right {
+    height: 100%;
+    width: 15%;
+    margin-left: 5px;
+    display: flex;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 0.1);
+}
+
+.section-2 .right img {
+    width: 200%;
+    height: 100%;
+}
+
+
+/* Section-3  */
+.section-3 {
+    margin-top: 1.2rem;
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: white;
+    height: 340px;
+}
+
+.section-3 .upper-container {
+    height: 10%;
+    width: 100%;
+    align-items: center;
+    padding: 18px 0px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+.section-3 .upper-container button {
+    background-color: var(--primary-color);
+    margin-left: auto;
+    margin-right: 50px;
+    border-radius: 2px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 9px 18px;
+    cursor: pointer;
+}
+
+
+.section-3-lower-container {
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: auto;
+}
+
+.section-3-items {
+    text-align: center;
+    width: 200px;
+    padding: 24px;
+}
+
+.section-3-items img {
+    width: 135px;
+    height: 160px;
+    margin: auto;
+}
+
+.section-3-items .product-name {
+    font-size: 0.8rem;
+    margin: 2px 0;
+}
+
+.section-3-items .offer {
+    font-size: 16px;
+    color: #388e3c;
+    margin: 4px 0;
+}
+
+.section-3-items .sub-text {
+    opacity: 0.6;
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+
+/* For handling header Elements & section-1 */
+@media screen and (max-width:1265px) {
+    .search {
+        display: none;
+
+    }
+
+    .logo {
+        align-self: center;
+    }
+
+    .section-1 {
+        display: none;
+    }
+
+    .menu {
+        display: inline;
+    }
+
+    #search_color {
+        display: block;
+    }
+
+    header .login {
+        display: none;
+    }
+
+    header .more {
+        display: none;
+    }
+
+    header .cart {
+        display: none;
+    }
+}
+
+/* For handling section-2 */
+@media screen and (max-width:1265px) {
+    .section-2 .right {
+        display: none;
+    }
+
+    .section-2 .left-container {
+        width: 100%;
+
+    }
+}
